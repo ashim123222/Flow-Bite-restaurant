@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="Flow/Bite Admin" />
+    <meta name="theme-color" content="#18312e" />
+    <meta name="description" content="Flow/Bite Restaurant Admin Panel" />
+    <title>Admin Panel - Flow/Bite</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/admin.css" />
+  </head>
+  <body>
+    <div class="fixed-bg"></div>
+    <header id="main-header">
+      <div class="logo">Flow/<span>Bite</span></div>
+      <nav class="hover-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html#service">Service</a>
+      </nav>
+      <div class="admin-header-right">
+        <span class="admin-user"><i class="fas fa-user-circle"></i> Admin</span>
+      </div>
+    </header>
+    <section id="admin-section">
+      <div class="admin-container">
+        <div class="admin-navbar">
+          <button
+            class="admin-nav-btn active"
+            onclick="openTab(event, 'dashboard')"
+          >
+            Dashboard
+          </button>
+          <button class="admin-nav-btn" onclick="openTab(event, 'menu')">
+            Menu
+          </button>
+          <button class="admin-nav-btn" onclick="openTab(event, 'order')">
+            Orders
+          </button>
+          <button class="admin-nav-btn" onclick="openTab(event, 'setting')">
+            Setting
+          </button>
+          <button class="admin-nav-btn" onclick="openTab(event, 'add-new')">
+            Add New Item
+          </button>
+          <button class="log-out">Log Out</button>
+        </div>
+
+        <div id="dashboard" class="admin-content active">
+          <div class="dashboard-top">
+            <h2>Dashboard Overview</h2>
+            <p>
+              Monitor your restaurant’s performance, manage orders, and keep
+              everything running smoothly — all in one place.
+            </p>
+          </div>
+          <div class="dashboard-card-contain">
+
+            <!-- order-card  -->
+
+            <div class="dashboard-card glass-card">
+              <h3>Today's Orders</h3>
+              <div class="dashboard-order-detail middle">
+                  <div class="count">
+                    <span class="value yellow-value">14</span>
+                    <p class="yellow">Chicken</p>
+                  </div>
+                  <div class="count">
+                    <span class="value pink-value">28</span>
+                    <p class="pink">Drinks</p>
+                  </div>
+                  <div class="count">
+                    <span class="value aqua-value">17</span>
+                    <p class="aqua">Desserts</p>
+                  </div>
+                  
+              </div>
+              <p class="insight green">+12% compare to yesterday</p>
+            </div>
+
+            <!-- revenue card  -->
+
+            <div class="dashboard-card glass-card">
+              <h3>Today's Revenue</h3>
+              <div class="dashboard-revenue-detail middle">
+                <span class="value">&#8377; 14,875</span>
+              </div>
+              <p class="subtext">Total earnings today</p>
+              <p class="insight green">Peak hours: 7:00 am to 10:00 am</p>
+            </div>
+
+            <!-- menu cards  -->
+
+            <div class="dashboard-card glass-card">
+              <h3>Active Menu Items</h3>
+              <div class="dashboard-menu-detail middle">
+                <span class="value">18</span>
+              </div>
+              <p class="subtext">Items currently available</p>
+              <p class="insight red">3 items out of stock</p>
+            </div>
+
+            <!-- pending orders  -->
+
+            <div class="dashboard-card glass-card">
+              <h3>Pending Orders</h3>
+              <div class="dashboard-pending-detail middle">
+                <span class="value">4</span>
+              </div>
+              <p class="subtext">Awaiting preparation</p>
+              <p class="insight yellow">2 high priority orders</p>
+            </div>
+          </div>
+        </div>
+        <div id="menu" class="admin-content">
+          <h1>menu contain here</h1>
+        </div>
+        <div id="order" class="admin-content">
+          <h1>order contain here</h1>
+        </div>
+        <div id="setting" class="admin-content">
+          <h1>setting contain here</h1>
+        </div>
+        <div id="add-new" class="admin-content">
+          <h1>Add new item contain here</h1>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/admin.js"></script>
+  </body>
+</html>

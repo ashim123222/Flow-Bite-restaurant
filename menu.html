@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+  </head>
+  <body>
+    <div class="fixed-bg"></div>
+    <header id="main-header">
+      <div class="logo">Flow/<span>Bite</span></div>
+      <nav id="nav-links" class="hover-links">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <button id="nav-btn" class="menu">
+        <span class="menu-line line-1"></span>
+        <span class="menu-line line-2"></span>
+        <span class="menu-line line-3"></span>
+      </button>
+    </header>
+
+    <section id="menu-section">
+      <div class="tabs-container">
+        <div class="tab-menu">
+          <button
+            class="tab-btn active chicken-btn"
+            onclick="openTab(event, 'chicken')"
+          >
+            CHICKEN DISH
+            <img src="./assets/chicken-logo.png" alt="" />
+          </button>
+          <button class="tab-btn" onclick="openTab(event, 'drinks')">
+            DRINKS MENU
+            <img src="./assets/drinks-btn.png" alt="" />
+          </button>
+          <button class="tab-btn" onclick="openTab(event, 'desserts')">
+            DESSERTS MENU
+            <img src="./assets/desserts-btn-two.png" alt="" />
+          </button>
+        </div>
+
+        <div id="chicken" class="tab-content active">
+          <div class="dish-card glass-card enter">
+            <div class="img">
+              <img src="./assets/menu-image/biryani food.jpg" alt="" />
+            </div>
+            <div class="dish-detail">
+              <h3>Signature Chicken Dish</h3>
+              <p>
+                Our signature chicken dish is marinated in a blend of spices and
+                grilled to perfection, served with a side of seasonal vegetables
+                and your choice of sauce.
+              </p>
+              <br />
+              <div class="bottom">
+                <span class="price">&#8377;<i>199</i></span
+                ><span> <button>Order Now</button></span>
+              </div>
+            </div>
+          </div>
+          <div class="dish-card glass-card enter">
+            <div class="img">
+              <img src="./assets/menu-image/biryani food.jpg" alt="" />
+            </div>
+            <div class="dish-detail">
+              <h3>Chicken Biryani</h3>
+              <p>
+                A fragrant blend of basmati rice, tender chicken pieces, and
+                aromatic spices, slow-cooked to perfection and garnished with
+                fried onions and fresh herbs.
+              </p>
+              <br />
+              <div class="bottom">
+                <span class="price">&#8377;<i>199</i></span
+                ><span> <button>Order Now</button></span>
+              </div>
+            </div>
+          </div>
+          <div class="dish-card glass-card enter">
+            <div class="img">
+              <img src="./assets/menu-image/chicken korma.png" alt="" />
+            </div>
+            <div class="dish-detail">
+              <h3>Chicken korma</h3>
+              <p>
+                A rich and creamy curry made with tender chicken, yogurt, nuts,
+                and a blend of traditional spices, served with steamed rice or
+                naan bread.
+              </p>
+              <br />
+              <div class="bottom">
+                <span class="price">&#8377;<i>199</i></span
+                ><span> <button>Order Now</button></span>
+              </div>
+            </div>
+          </div>
+          <div class="dish-card glass-card enter">
+            <div class="img">
+              <img src="./assets/menu-image/chicken tikka.png" alt="" />
+            </div>
+            <div class="dish-detail">
+              <h3>Chicken tikka</h3>
+              <p>
+                Succulent pieces of chicken marinated in yogurt and spices,
+                grilled to perfection and served with a side of mint chutney and
+                salad.
+              </p>
+              <br />
+              <div class="bottom">
+                <span class="price">&#8377;<i>199</i></span
+                ><span> <button>Order Now</button></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="drinks" class="tab-content">
+          <div class="dish-card glass-card">
+            <div class="img">
+              <img src="./assets/menu-image/chicken korma.png" alt="" />
+            </div>
+            <div class="dish-detail">
+              <h3>Chicken korma</h3>
+              <p>
+                A rich and creamy curry made with tender chicken, yogurt, nuts,
+                and a blend of traditional spices, served with steamed rice or
+                naan bread.
+              </p>
+              <br />
+              <div class="bottom">
+                <span class="price">&#8377;<i>199</i></span
+                ><span> <button>Order Now</button></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="desserts" class="tab-content">
+          <div class="dish-card glass-card">
+            <div class="img">
+              <img src="./assets/menu-image/chicken korma.png" alt="" />
+            </div>
+            <div class="dish-detail">
+              <h3>Chicken korma 7y8</h3>
+              <p>
+                A rich and creamy curry made with tender chicken, yogurt, nuts,
+                and a blend of traditional spices, served with steamed rice or
+                naan bread.
+              </p>
+              <br />
+              <div class="bottom">
+                <span class="price">&#8377;<i>199</i></span
+                ><span> <button>Order Now</button></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
